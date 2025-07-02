@@ -1,37 +1,95 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# =====================================
+# OS-Specific (Windows)
+# =====================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# =====================================
+# Java
+# =====================================
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# =====================================
+# Gradle
+# =====================================
+.gradle/
+**/build/
+!src/**/build/
+
+# Gradle wrapper
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Gradle local cache (optional)
+.gradletasknamecache
+
+# =====================================
+# IntelliJ IDEA (JetBrains)
+# =====================================
+# 사용자 설정 및 임시 캐시
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources*
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/replstate.xml
+.idea/httpRequests
+.idea/caches/
+
+# 플러그인 설정 캐시
+.idea/**/sonarlint/
+.idea/**/sonarIssues.xml
+.idea/**/markdown-navigator*
+.idea/**/azureSettings.xml
+.idea/codestream.xml
+
+# 빌드 결과물
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Gradle auto-import 대응: 모듈 정의 무시
+.idea/modules.xml
+.idea/*.iml
+*.iml
 
-### VS Code ###
-.vscode/
+# =====================================
+# 공유할 설정 예외 처리
+# =====================================
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+
+# =====================================
+# 📛 민감 정보 포함 가능 설정 파일 무시
+# =====================================
+
+# 환경설정에서 실제 값이 들어있는 파일 무시
+application.yml
+
+# =====================================
+# 기타 무시
+*.stackdump
+
+# =====================================
+# 무시 대상 JetBrains 설정 파일
+.idea/**/gradle.xml
+.idea/**/compiler.xml
+.idea/**/jarRepositories.xml
+.idea/**/discord.xml
+.idea/**/vcs.xml
+HELP.md
