@@ -1,7 +1,7 @@
 package com.lifelogmap.server.member.service;
 
-import com.lifelogmap.server.auth.infrastructure.dto.KakaoAccount;
-import com.lifelogmap.server.auth.infrastructure.dto.KakaoProfile;
+import com.lifelogmap.server.auth.dto.KakaoAccount;
+import com.lifelogmap.server.auth.dto.KakaoProfile;
 import com.lifelogmap.server.member.domain.Member;
 import com.lifelogmap.server.member.domain.Role;
 import com.lifelogmap.server.member.repository.MemberRepository;
@@ -33,5 +33,9 @@ public class MemberService {
     public Member findByEmail(final String email) {
         return memberRepository.findByEmail(email)
                 .orElseThrow(() -> new IllegalArgumentException("해당하는 회원을 찾을 수 없습니다."));
+    }
+
+    public Member save(final Member member) {
+        return memberRepository.save(member);
     }
 }

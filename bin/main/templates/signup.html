@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Life Log Map - 회원가입</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/auth.css" />
+</head>
+<body>
+  <div id="main-bg">
+    <!-- 로고/앱이름 -->
+    <header id="logo-header">
+      <div class="logo-svg">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <ellipse cx="16" cy="20" rx="10" ry="14" fill="#3cb371"/>
+          <rect x="14" y="24" width="4" height="8" rx="2" fill="#8b5c2a"/>
+        </svg>
+      </div>
+      <span class="logo-text">
+        <span class="logo-life">Life</span>
+        <span class="logo-log">Log</span>
+        <span class="logo-map">Map</span>
+      </span>
+    </header>
+    <!-- 나뭇잎 애니메이션 영역 -->
+    <!-- 중앙 회원가입 박스 -->
+    <div id="center-box">
+      <div class="login-container">
+        <h1 class="main-title">회원가입</h1>
+        
+        <!-- 회원가입 폼 -->
+        <form id="signup-form" class="auth-form">
+          <div class="input-group">
+            <input type="text" id="signup-name" name="name" placeholder="이름" required>
+            <div class="input-icon">👤</div>
+          </div>
+          <div class="input-group">
+            <input type="email" id="signup-email" name="email" placeholder="이메일" required>
+            <div class="input-icon">📧</div>
+          </div>
+          <div class="input-group">
+            <input type="password" id="signup-password" name="password" placeholder="비밀번호" required>
+            <div class="input-icon">🔒</div>
+          </div>
+          <div class="input-group">
+            <input type="password" id="signup-password-confirm" name="passwordConfirm" placeholder="비밀번호 확인" required>
+            <div class="input-icon">🔒</div>
+          </div>
+          <button type="submit" class="signup-btn">회원가입</button>
+        </form>
+
+        <!-- 로그인 링크 -->
+        <div class="auth-footer">
+          <span style="color: #6b8a8a; font-size: 0.9rem;">이미 계정이 있으신가요?</span>
+          <a href="/" class="signup-link">로그인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+  <script src="/js/signup.js"></script>
+</body>
+</html> 

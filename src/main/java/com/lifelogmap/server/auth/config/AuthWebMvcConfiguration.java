@@ -6,11 +6,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
-public class WebMvcConfiguration implements WebMvcConfigurer{
+public class AuthWebMvcConfiguration implements WebMvcConfigurer{
 
     private final LoginMemberArgumentResolver loginMemberArgumentResolver;
 
-    public WebMvcConfiguration(final LoginMemberArgumentResolver loginMemberArgumentResolver) {
+    public AuthWebMvcConfiguration(final LoginMemberArgumentResolver loginMemberArgumentResolver) {
         this.loginMemberArgumentResolver = loginMemberArgumentResolver;
     }
 

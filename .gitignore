@@ -85,6 +85,9 @@ application.yml
 # 기타 무시
 *.stackdump
 
+# ================================env
+.env
+
 # =====================================
 # 무시 대상 JetBrains 설정 파일
 .idea/**/gradle.xml

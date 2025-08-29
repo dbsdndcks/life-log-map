@@ -1,3 +1,3 @@
-package com.lifelogmap.server.auth.infrastructure.dto;
+package com.lifelogmap.server.auth.dto;
 
 public record KakaoAccountProflie(String nickname) {}

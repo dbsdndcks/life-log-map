@@ -1,4 +1,4 @@
-package com.lifelogmap.server.auth.infrastructure.dto;
+package com.lifelogmap.server.auth.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

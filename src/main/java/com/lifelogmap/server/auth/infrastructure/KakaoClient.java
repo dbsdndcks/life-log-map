@@ -1,7 +1,7 @@
 package com.lifelogmap.server.auth.infrastructure;
 
-import com.lifelogmap.server.auth.infrastructure.dto.KakaoProfile;
-import com.lifelogmap.server.auth.infrastructure.dto.KakaoToken;
+import com.lifelogmap.server.auth.dto.KakaoProfile;
+import com.lifelogmap.server.auth.dto.KakaoToken;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
