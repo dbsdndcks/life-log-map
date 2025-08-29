@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Life Log Map</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/auth.css" />
+</head>
+<body>
+  <div id="main-bg">
+    <!-- 로고/앱이름 -->
+    <header id="logo-header">
+      <div class="logo-svg">
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <ellipse cx="16" cy="20" rx="10" ry="14" fill="#3cb371"/>
+          <rect x="14" y="24" width="4" height="8" rx="2" fill="#8b5c2a"/>
+        </svg>
+      </div>
+      <span class="logo-text">
+        <span class="logo-life">Life</span>
+        <span class="logo-log">Log</span>
+        <span class="logo-map">Map</span>
+      </span>
+    </header>
+    <!-- 나뭇잎 애니메이션 영역 -->
+    <!-- 중앙 로그인 박스 -->
+    <div id="center-box">
+      <div class="login-container">
+        <h1 class="main-title">지도로 기록하는 일상</h1>
+        
+        <!-- 로그인 폼 -->
+        <form id="login-form" class="auth-form">
+          <div class="input-group">
+            <input type="email" id="login-email" name="email" placeholder="이메일" required>
+            <div class="input-icon">📧</div>
+          </div>
+          <div class="input-group">
+            <input type="password" id="login-password" name="password" placeholder="비밀번호" required>
+            <div class="input-icon">🔒</div>
+          </div>
+          <button type="submit" class="login-btn">로그인</button>
+        </form>
+
+        <div class="sns-divider">또는</div>
+        
+        <!-- SNS 로그인 버튼들 -->
+        <div class="sns-btns">
+          <button class="sns-btn sns-kakao" title="카카오 로그인">
+            <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" alt="카카오" style="width:28px;height:28px;" />
+          </button>
+          <button class="sns-btn sns-naver" title="네이버 로그인">
+            <span style="font-weight:700;font-size:1.3rem;">N</span>
+          </button>
+          <button class="sns-btn sns-google" title="구글 로그인">
+            <span style="font-weight:700;font-size:1.3rem;">G</span>
+          </button>
+        </div>
+
+        <!-- 회원가입 링크 -->
+        <div class="auth-footer">
+          <a href="#" class="forgot-password">비밀번호를 잊으셨나요?</a>
+          <a href="/signup" class="signup-link">회원가입</a>
+        </div>
+      </div>
+    </div>
+    <div id="map" style="display:none;"></div>
+  </div>
+  <script src="/js/script.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
